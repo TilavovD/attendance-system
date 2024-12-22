@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Attendance System</h1>
+    <button id="start-btn">Start Attendance</button>
+    <button id="stop-btn" disabled>Stop Attendance</button>
+    <video id="video" autoplay></video>
+
+    <div id="results">
+        <h2>Recognized Students</h2>
+        <ul id="students-list"></ul>
+    </div>
+
+    <div id="add-student">
+        <h2>Add New Student</h2>
+        <form id="add-student-form">
+            <input type="text" id="student-name" placeholder="Student Name" required>
+            <input type="file" id="student-photo" accept="image/*" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <p id="add-student-message"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
